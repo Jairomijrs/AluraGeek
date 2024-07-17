@@ -1,0 +1,147 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+:root {
+    --fuente-principal: 'Montserrat', sans-serif;
+    --fuente-logo: 'Inter', sans-serif;
+    --azul-claro: #6BD1FF;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--black);
+    font-size: 16px;
+}
+
+.contenido-general{
+    display: flex;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+}
+
+.encabezado-lista__item{
+    display: flex;
+    justify-content: end;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+.seccion-productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6a23cc
+}
+
+.marco-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    align-self: flex-start;
+    margin-top: 0.1em;
+}
+
+.marco-fluor {
+    position: relative;
+    padding: 10px;
+    /*border: 2px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;*/
+    border: 2px solid #fafafa;
+    box-shadow: 0 0 10px #fafafa, 0 0 20px #fafafa, 0 0 30px #fafafa;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    margin: 15px;
+}
+
+.imagen-cuadro {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 70%;
+    border-radius: 10px;
+}
+
+.titulo-cuadro {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.tecnica{
+    margin-top: 10px;
+    color: #d9f3b7;
+    font-size: 0.8em;
+}
+
+.eliminar {
+    background-color: transparent;
+    border: none;
+}
+
+.icono-papelera {
+    /*margin-top: auto;
+    margin-top: 5px;*/
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icono-papelera img {
+    width: 24px;
+    height: 24px;
+}
+
+.icono-papelera img:hover {
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+.encabezado__logo-link {
+    text-decoration: none;
+}
+
+.banner{
+    background-color: #6a23cc;
+}
+
+.agregar-nuevo{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px;
+}
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.beneficios-lista__item{
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+}
+
